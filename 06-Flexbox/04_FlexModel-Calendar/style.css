@@ -1,0 +1,102 @@
+/* html {
+    box-sizing: border-box;
+}
+
+.container, .container .week, .container .notes {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+}
+
+.container {
+    max-width: 65vw;
+}
+
+.container .week {
+    flex-wrap: wrap;
+}
+
+.container .notes {
+    flex-direction: column;
+    align-items: stretch;
+}
+
+span {
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    text-align: center;
+    height: 50px;
+    padding: 15px 0;
+}
+
+.container .week span:nth-child(-n + 6) {
+    flex: 19%;
+}
+
+.container .week span:nth-child(1) {
+    flex: 100%;
+}
+
+.container .week span:nth-child(7) {
+    flex: 100%;
+}
+
+.container .week span:nth-child(8) {
+    flex: 49%;
+}
+
+.container .week span:nth-child(9) {
+    flex: 49%;
+}
+
+.container .notes span:nth-child(n + 1) {
+    flex: 49%;
+    padding: 15px 30px;
+} */
+
+
+/* ==== Second solution ==== */
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 65vw;
+    display: flex;
+    
+}
+.container span{
+    border: 1px solid black;
+    padding: 0.5rem;
+    text-align: center;
+    height: 80px;
+}
+
+.container .week{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container .week .workday{
+    width: 20%;
+}
+
+.container .week .workweek, .container .week .weekend{
+    width: 100%;
+}
+
+.container .week .sat, .container .week .sun{
+    width: 50%;
+}
+
+.container .notes{
+    display: flex;
+    flex-direction: column;
+}
+
+.container .notes span{
+    height: 50%;
+}
+
